@@ -37,7 +37,7 @@ describe('Vladilen Promise: ', () => {
 
   test('should catch error', () => {
     const errorExecutor = (_, r) => t(() => r(errorResult), 150)
-    const errorPromise = new VladilenPromise(errorExecutor)
+    const errorPromise = new YevheniiPromise(errorExecutor)
 
     return new Promise(resolve => {
       errorPromise.catch(error => {
